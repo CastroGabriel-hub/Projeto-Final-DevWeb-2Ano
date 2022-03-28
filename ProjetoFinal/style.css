@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 120vh;
+    color:#474650;
+    font-size: 0.9rem;
+    background-color:aliceblue;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: black;
+
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+footer{
+    background-color: black;
+    padding: 10px 10%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.container{
+    width: 1000px;
+    height: 320px;
+    padding: 10px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 280px;
+}
+
+.btnDiv{
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 0 5px 12px rgb(158, 158, 158);
+    overflow: hidden;
+    position: relative;
+    left: 25px;
+}
+
+table thead{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+td{
+    padding: 12px 12px;
+    font-size: 12px;
+}
+
+tbody td{
+    border: 1px solid #d1d2d3;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #f3f3f3;
+}
+
+tbody tr:nth-child(even){
+    background-color: #ebecee;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 1.25rem;
+    position: relative;
+    background: #000;
+    color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+.btn::after, .btn::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background-color: #000;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover{
+    transform: translate(-12px, -12px);
+    cursor: pointer;
+}
+
+.btn:hover::after{
+    transform: translate(6px, 6px);
+    cursor: pointer;
+}
+
+.btn:hover::before{
+    transform: translate(12px, 12px);
+    cursor: pointer;
+}
+
+input{
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: transparent;
+    outline: none;
+    -moz-appearance: textfield;
+}
+
+
+/*Coloração das notas*/
+.azul{
+    background-color: #87CEEB;
+}
+
+.vermelho{
+    background-color: tomato;
+}
+
+.amarelo{
+    background-color: #FCF55F;
+}

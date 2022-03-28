@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Projeto Final</title>
+</head>
+<body>
+    <header>
+        <h2><a href="table.html" class="logo"> Média anual</a></h2>
+    </header>
+    <div class="container">
+        <div class="tbDiv">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Disciplina</td>
+                        <td>1º Bimestre</td>
+                        <td>2º Bimestre</td>
+                        <td>3º Bimestre</td>
+                        <td>4º Bimestre</td>
+                        <td>Média anual</td>
+                        <td>Exame</td>
+                        <td>Nota do exame</td>
+                        <td>Resultado Final</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Português</td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="pt01"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="pt02"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="pt03"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="pt04"></td>
+                        <td id="media01"></td>
+                        <td><label for="exame01" id="exame01"></label></td>
+                        <td id="notaEx01"></td>
+                        <td id="final01"></td>
+                    </tr>
+                    <tr>
+                        <td>Matemática</td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="mt01"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="mt02"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="mt03"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="mt04"></td>
+                        <td id="media02"></td>
+                        <td id="exame02"></td>
+                        <td id="notaEx02"></td>
+                        <td id="final02"></td>
+                    </tr>
+                    <tr>
+                        <td>História</td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="hist01"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="hist02"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="hist03"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="hist04"></td>
+                        <td id="media03"></label></td>
+                        <td id="exame03"></td>
+                        <td id="notaEx03"></td>
+                        <td id="final03"></td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="geo01"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="geo02"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="geo03"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="geo04"></td>
+                        <td id="media04"></td>
+                        <td id="exame04"></td>
+                        <td id="notaEx04"></td>
+                        <td id="final04"></td>
+                    </tr>
+                    <tr>
+                        <td>Inglês</td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="ing01"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="ing02"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="ing03"></td>
+                        <td><input type="number" class="" placeholder="NOTA" onblur="colorir(this)" id="ing04"></td>
+                        <td id="media05"></td>
+                        <td id="exame05"></td>
+                        <td id="notaEx05"></td>
+                        <td id="final05"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btnDiv">
+            <button class="btn" onclick="calcMedia()">Calcular médias</button>
+            <button class="btn" onclick="resultFinal()">Finalizar</button>
+        </div>
+    </div>
+    <div class="finale">
+        <footer>
+            <h3>Criado e desenvolvido por Gabriel dos Santos de Castro © 2022</h3>
+        </footer>
+    </div>
+</body>
+</html>
